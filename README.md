@@ -1,3 +1,7 @@
+## A New Non-intrusive Load Monitoring (NILM) Method for Residential Appliances
+This project is to improve accuracy performance of the existing NILM systems. 
+The method is composed of 7 steps across the 3 phases
+
 ## [Prerequisite] Installation of NIMLTK Environement
 
 ### python version 3.7 is required
