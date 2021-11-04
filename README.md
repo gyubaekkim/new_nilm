@@ -4,7 +4,8 @@
 
 
 
-### NILMTK Setting (https://github.com/nilmtk/nilmtk)
+### NILMTK Setting 
+[REF] https://github.com/nilmtk/nilmtk
 -	conda create -n nilm -c conda-forge -c nilmtk nilmtk-contrib
 -	conda activate nilm
 
