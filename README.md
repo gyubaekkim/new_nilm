@@ -39,7 +39,7 @@ The method is composed of 7 steps across the 3 phases
 #### Trouble Shooting
 -	from keras.utils import plot_model --> from keras.utils.vis_utils import plot_model
 
-## [Notebook] The most important steps for new NILM method
+## [Notebooks] The most important steps for new NILM method
 
 ### <a name="action1" /> 1. Pre-verification
 We examine the pre-verification of candidate appliances in which appliances that cannot be recognized by NILM are excluded.
