@@ -3,7 +3,7 @@ This project is to improve accuracy performance of the existing NILM systems.
 The method is composed of 7 steps across the 3 phases
 
 ### Pre-phase
-- Pre-verification
+- Pre-verification[#1. Pre-verification]
 - Algorithm Selection
 
 ### Build phase
