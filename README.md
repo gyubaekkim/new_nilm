@@ -4,16 +4,16 @@ The method is composed of 7 steps across the 3 phases
 
 ### Pre-phase
 - [Pre-verification](#action1)
-- Algorithm Selection
+- [Algorithm Selection](#action2)
 
 ### Build phase
 - Preprocessing
 - Feature Extraction
-- Training/Evaluation
+- [Training/Evaluation](#action3)
 
 ### Use phase
 - Prediction (Disaggregation)
-- Result Post-processing
+- [Result Post-processing](#action4)
 
 ## [Prerequisite] Installation of NIMLTK Environement
 
