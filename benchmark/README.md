@@ -6,7 +6,7 @@
 ### Instructions
 - Visit the original project site
 - Download the following source codes and place them in the directory(/benchmark)
-  -- /DAE/daedisaggregator.py
+  > /DAE/daedisaggregator.py
   -- /DAE/metrics.py
   -- /GRU/grudisaggregator.py
   -- /RNN/rnndisaggregator.py
