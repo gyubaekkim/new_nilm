@@ -14,4 +14,4 @@ This directory includes the following 5 modified NILM models with the proposed f
 - shortseq2pointdisaggregator_fe.py
 - windowgrudisaggregator_fe.py
 
-* postfix "_fe" means feature engineering.
+postfix "_fe" means feature engineering.
