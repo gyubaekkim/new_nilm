@@ -1,11 +1,11 @@
 ### Implementations of NILM disaggegregators using Neural Networks
 - Source : https://github.com/OdysseasKr/neural-disaggregator
 
-* The above project is used to compare the performance with our implementation
+* The project is used to compare the performance with our implementation
 
 ### Instructions
-- Visit the original project site
-- Download the following 5 source codes and place them in the directory(/benchmark)
+- Visit the above project site
+- Download the following 5 source codes and copy them in the directory(/benchmark)
   * /DAE/daedisaggregator.py
   * /GRU/grudisaggregator.py
   * /RNN/rnndisaggregator.py
