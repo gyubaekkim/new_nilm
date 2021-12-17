@@ -1,19 +1,14 @@
-## A New Non-intrusive Load Monitoring (NILM) Method for Residential Appliances
-This project is to improve accuracy performance of the existing NILM systems. 
-The method is composed of 7 steps across the 3 phases
+## An Experimental Study on Performance of Non-intrusive Load Monitoring
+This project is to review on performance of the existing NILM systems. 
+The study is composed of several experiments
 
-### Pre-phase
-- [Pre-verification](#action1)
-- [Algorithm Selection](#action2)
-
-### Build phase
-- Preprocessing
-- Feature Extraction
-- [Training/Evaluation](#action3)
-
-### Use phase
-- Prediction (Disaggregation)
-- [Result Post-processing](#action4)
+### Experiments
+- [on Algorithms](#action1)
+- [on Sampling Period](#action2)
+- [on Feature Extraction](#action3)
+- [on Datasets](#action4)
+- [on Model Architecture](#action5)
+- [on Post-processing](#action6)
 
 ## [Prerequisite] Installation of NIMLTK Environement
 
@@ -41,15 +36,27 @@ The method is composed of 7 steps across the 3 phases
 
 ## [Notebooks] The most important steps for new NILM method
 
-### <a name="action1" /> 1. Pre-verification
-We examine the pre-verification of candidate appliances in which appliances that cannot be recognized by NILM are excluded.
-Pre-verification is performed prior to NILM model development. NILM models can only work when the training data they receive is produced by appliances with consistent electrical consumption patterns. This was confirmed using the dynamic time warping (DTW) technique, which is better suited than the Euclidian distance method even if the lengths or starting points of the comparison targets are different
+### <a name="action1" /> 1. Algorithms
+The following seven machine learning algorithms are evaluated for NILM performance comparison.
+- Recurrent Neural Net (RNN)
+- Gated Recurrent Unit (GRU)
+- Window GRU (WGRU)
+- Denosing Autoencoder (DAE)
+- Sequence to Point (S2P)
+- Random Forest (RF)
+- Gradient Boost Machine (GBM)
 
-### <a name="action2" /> 2. Algorithm Selection
-Various algorithms have been utilized by NILM systems. The benchmark project used adopted neural network-based algorithms. The neural network-based algorithms performed better than existing combinational optimization and hidden Markov models. Thus, we compared the performance of the models produced by the proposed method with the neural network-based algorithms. We used random forest and gradient boosting machine (GBM), the representative decision tree-based ensemble models, in the proposed method.
+### <a name="action2" /> 2. Sampling Period
+To examine the effect of the sampling period of data on NILM performance, experiments are conducted with different sample period data.
 
-### <a name="action3" /> 3. Experiments
-NILM performance was evaluated in terms of precision, recall, accuracy, and F1 score, which are commonly used performance indicators for classification models, and whether the results satisfied the target level (all metrics are over 70%).
+### <a name="action3" /> 3. Feature Extraction
+NILM performance is evaluated when models are trained with extracted features. In the previous experiment, only one input feature was trained.
 
-### <a name="action4" /> 4. Result Post-processing
+### <a name="action4" /> 4. Datasets
+It should be verified whether the performance depends on datasets or not. For this purpose, it is necessary to check whether the NILM model developed through the previous process with Enertalk dataset shows similar performance results in other dataset, UK-DALE. 
+
+### <a name="action5" /> 5. Model Architecture
+NILM as multi-label classification problem can be generally implemented through either binary relevance or chain classifier methods.
+
+### <a name="action6" /> 6. Result Post-processing
 NILM model results cannot be used directly, so they must be post-processed. The find_peaks function in the Python scipy package was used to identify when the appliance was activated. The proper input parameters were set to detect peaks that indicated appliance operation.
