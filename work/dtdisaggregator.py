@@ -1,7 +1,7 @@
-# A New Non-intrusive Load Monitoring Method for Residential Appliances
+# An Experimental Study on Performance of Non-intrusive Load Monitoring
 # Author : Gyubaek Kim (database.kim@yonsei.ac.kr)
 # Description
-#          Decision tree-based NILM models by our approach
+#          Decision tree-based NILM models
 # License
     # All rights reserved. No part of this code may be reproduced or transmitted in any form or by any means, or utilized by any information storage and 
     # retrieval system without written permission from the copyright owner. You can use this source code for free projects only. I will not allow 
