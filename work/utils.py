@@ -1,4 +1,4 @@
-# A New Non-intrusive Load Monitoring Method for Residential Appliances
+# An Experimental Study on Performance of Non-intrusive Load Monitoring
 # Author : Gyubaek Kim (database.kim@yonsei.ac.kr)
 # Description
 #          Utility functions to be used check similarity using dynamic time warping (DTW)
