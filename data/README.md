@@ -8,7 +8,7 @@ And, NILMTK that is used as the base framework requires hierarchical data format
 Therefore, in this directory, there must be two public dataset files named enertalk.h5 and ukdale.h5
 
 ### Enertalk
-Enertalk dataset is provided the following site
+Enertalk dataset is provided at the following site
 - https://github.com/ch-shin/ENERTALK-dataset
 
 The ENERTALK Dataset, 15 Hz Electricity Consumption Data from 22 Houses in South Korea.
