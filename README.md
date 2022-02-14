@@ -1,6 +1,7 @@
 ## The Improved Power Disaggregation
-This project is to improve performance of the existing NILM systems. 
-The study is composed of several experiments
+This project is to improve performance of the existing disaggregation systems.
+It is composed of the design phase for obtaining the optimized base model, and the build phase for constructing the applied model.
+The study is composed of several experiments.
 
 ### Experiments
 - [on Algorithms](#action1)
