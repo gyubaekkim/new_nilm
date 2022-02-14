@@ -1,14 +1,14 @@
-## An Experimental Study on Performance of Non-intrusive Load Monitoring
-This project is to review on performance of the existing NILM systems. 
+## The Improved Power Disaggregation
+This project is to improve performance of the existing NILM systems. 
 The study is composed of several experiments
 
 ### Experiments
 - [on Algorithms](#action1)
 - [on Sampling Period](#action2)
 - [on Feature Extraction](#action3)
-- [on Datasets](#action4)
-- [on Model Architecture](#action5)
-- [on Post-processing](#action6)
+- [on Noise](#action4)
+- [on Verification](#action5)
+- [on Pre-trained Model and Result Processing](#action6)
 
 ## [Prerequisite] Installation of NIMLTK Environement
 
@@ -37,7 +37,7 @@ The study is composed of several experiments
 ## [Notebooks] The most important steps for new NILM method
 
 ### <a name="action1" /> 1. Algorithms
-The following seven machine learning algorithms are evaluated for NILM performance comparison.
+The following seven machine learning algorithms are evaluated for disaggregation performance comparison.
 - Recurrent Neural Net (RNN)
 - Gated Recurrent Unit (GRU)
 - Window GRU (WGRU)
@@ -47,16 +47,16 @@ The following seven machine learning algorithms are evaluated for NILM performan
 - Gradient Boost Machine (GBM)
 
 ### <a name="action2" /> 2. Sampling Period
-To examine the effect of the sampling period of data on NILM performance, experiments are conducted with different sample period data.
+To examine the effect of the sampling period of data on disaggregation performance, experiments are conducted with different sample period data.
 
 ### <a name="action3" /> 3. Feature Extraction
-NILM performance is evaluated when models are trained with extracted features. In the previous experiment, only one input feature was trained.
+Disaggregation performance is evaluated when models are trained with extracted features. In the previous experiment, only one input feature was trained.
 
-### <a name="action4" /> 4. Datasets
-It should be verified whether the performance depends on datasets or not. For this purpose, it is necessary to check whether the NILM model developed through the previous process with Enertalk dataset shows similar performance results in other dataset, UK-DALE. 
+### <a name="action4" /> 4. Noise
+It should be verified whether the performance depends on datasets or not. For this purpose, it is necessary to check whether the disaggregation model developed through the previous process with Enertalk dataset shows similar performance results in other dataset that has noise, UK-DALE. 
 
-### <a name="action5" /> 5. Model Architecture
-NILM as multi-label classification problem can be generally implemented through either binary relevance or chain classifier methods.
+### <a name="action5" /> 5. Verfication
+Whether the developed disaggregation model can be built as a common pre-trained model showing the similarity between electricity consumption is verified.
 
-### <a name="action6" /> 6. Result Post-processing
-NILM model results cannot be used directly, so they must be post-processed. The find_peaks function in the Python scipy package was used to identify when the appliance was activated. The proper input parameters were set to detect peaks that indicated appliance operation.
+### <a name="action6" /> 6. Pre-training with Chaining and Result Post-processing
+A common pre-trained model for all households is built. And, chaining is applied to improve the performance. Finally, disaggregation model results cannot be used directly, so they must be post-processed. For this, an intelligent reasoning method to find actual activiations is proposed.
