@@ -1,5 +1,5 @@
 ### 1 dtdisaggregator.py
-It is the main source code that implemented the proposed NILM model based on NILMTK.
+It is the main source code that implemented the proposed disaggregation model based on NILMTK.
 It includes random forest algorithm selection and feature engineering scheme.
 
 
