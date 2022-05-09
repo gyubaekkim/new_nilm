@@ -1,11 +1,10 @@
 Public datasets used for the project
 
 * Enertalk
-* UK-DALE
 
 And, NILMTK that is used as the base framework requires hierarchical data format (HDF) with file extension of ".h5"
 
-Therefore, in this directory, there must be two public dataset files named enertalk.h5 and ukdale.h5
+Therefore, in this directory, there must be public dataset file named enertalk.h5
 
 ### Enertalk
 Enertalk dataset is provided at the following site
@@ -31,9 +30,4 @@ Please, refer to the following actions for converting original dataset into HDF 
   * train_mains = train_elec.all_meters()[0]          # Proper use
  
 
-### UK-DALE
-
-ukdale.h5 file which is included in ukdale.h5.tgz can be directed acquired from the following site
-- https://data.ukedc.rl.ac.uk/browse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2015/UK-DALE-disaggregated
-
-* Due to license issue, those public datasets are not provided here!
+* Due to license issue, the public dataset is not provided here!
