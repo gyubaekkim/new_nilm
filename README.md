@@ -55,5 +55,5 @@ Disaggregation performance is evaluated when models are trained with extracted f
 ### <a name="action4" /> 4. Pre-verfication
 Whether the developed disaggregation model can be built as a common pre-trained model showing the similarity between electricity consumption is verified.
 
-### <a name="action5" /> 6. Pre-training with Chaining and Result Post-processing
+### <a name="action5" /> 5. Pre-training with Chaining and Result Post-processing
 A common pre-trained model for all households is built. Finally, disaggregation model results cannot be used directly, so they must be post-processed. For this, an intelligent reasoning method to find actual activiations is proposed.
