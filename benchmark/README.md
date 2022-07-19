@@ -13,4 +13,9 @@
   * /ShortSeq2Point/shortseq2pointdisaggregator.py
   * /WindowGRU/windowgrudisaggregator.py
   
-- Due to license issue, the above source codes are not provided here!!
+- In case of ResNet, we modified the original source code for our purpose.
+  Original source code is available at https://github.com/rgtzths/ICMLC_ICWAPR_code_base
+
+  * ResNet.py
+  
+- Due to license issue, the above other source codes are not provided here!!
