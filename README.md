@@ -37,7 +37,7 @@ The study is composed of several experiments.
 ## [Notebooks] The most important steps for new NILM method
 
 ### <a name="action1" /> 1. Algorithm Selection
-The following seven machine learning algorithms are evaluated for disaggregation performance comparison.
+The following eight machine learning algorithms are evaluated for disaggregation performance comparison.
 - Recurrent Neural Net (RNN)
 - Gated Recurrent Unit (GRU)
 - Window GRU (WGRU)
