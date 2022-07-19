@@ -43,6 +43,7 @@ The following seven machine learning algorithms are evaluated for disaggregation
 - Window GRU (WGRU)
 - Denosing Autoencoder (DAE)
 - Sequence to Point (S2P)
+- Residual Networks (ResNet)
 - Random Forest (RF)
 - Gradient Boost Machine (GBM)
 
